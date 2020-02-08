@@ -15,14 +15,21 @@
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <!-- Header starts here -->
     <header>
-        <div class="top-line wrapper">
+        <div class="top-line wrapper clearfix">
             <a href="index.html"><img class="logo" src="styles/assets/cmh-logo-purple.png" alt="CMH"></a>
-            <nav>
-                <ul>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="styles/assets/claudia-mh-ahn-resume.pdf" target="_blank">Resume</a></li>
-                </ul>
+            <button class="hamburger"><i class="fas fa-bars"></i><p class="sr-only">Click me to open up hamburger menu</p></button>
+            <nav class="menu">
+                <div class="half-screen">
+                    <button class="exit-responsive">
+                        <i class="fas fa-times"></i>
+                        <p class="sr-only">Click me to close navigation</p>
+                    </button>
+                    <ul class="right-menu clearfix">
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="styles/assets/claudia-mh-ahn-resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>   
@@ -46,5 +53,17 @@
         <p>© Claudia Mh Ahn 2020</p>
     </footer>
     <!-- Footer ends here -->
+    <!-- jQuery for hamburger menu -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+    $(function() {
+        $('.hamburger').click(function() {
+            $('.menu').addClass('show');
+        });
+        $('.exit-responsive').click(function() {
+            $('.menu').removeClass('show');
+        });
+    });
+    </script>
 </body>
 </html>
