@@ -12,6 +12,7 @@
     <link type="image/png" href="styles/assets/cmh-logo-purple.png" rel="icon">
 </head>
 <body class="projects">
+    <div id="particles-js"></div>
     <a href="#maincontent" class="skip-link">Skip to main content</a>
     <!-- Header starts here -->
     <header>
@@ -42,27 +43,19 @@
     <!-- Footer starts here -->
     <footer class="wrapper">
         <ul class="footer-icons icons">
-            <li><a href="https://claudiaahn.com" aria-label="Claudia's website"><i aria-hidden class="fas fa-briefcase"></i ar></a></li>
-            <li><a href="mailto:claudiamhahn@gmail.com" aria-label="Email Claudia"><i aria-hidden class="fas fa-envelope"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/claudiamhahn" aria-label="Go to Claudia's LinkedIn page"><i aria-hidden class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/cma129" aria-label="Go to Claudia's Github page"><i aria-hidden class="fab fa-github"></i></a></li>
-            <li><a href="https://www.twitter.com/ahn_claudia" aria-label="Go to Claudia's Twitter page"><i aria-hidden class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.medium.com/@claudiamhahn" aria-label="Go to Claudia's blog"><i aria-hidden class="fab fa-medium-m"></i></a></li>
+            <li><a href="https://claudiaahn.com" target="_blank" aria-label="Claudia's website"><i aria-hidden class="fas fa-briefcase"></i ar></a></li>
+            <li><a href="mailto:claudiamhahn@gmail.com" target="_blank" aria-label="Email Claudia"><i aria-hidden class="fas fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/claudiamhahn" target="_blank" aria-label="Go to Claudia's LinkedIn page"><i aria-hidden class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/cma129" target="_blank" aria-label="Go to Claudia's Github page"><i aria-hidden class="fab fa-github"></i></a></li>
+            <li><a href="https://www.twitter.com/ahn_claudia" target="_blank" aria-label="Go to Claudia's Twitter page"><i aria-hidden class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.medium.com/@claudiamhahn" target="_blank" aria-label="Go to Claudia's blog"><i aria-hidden class="fab fa-medium-m"></i></a></li>
         </ul>
         <p>© Claudia Mh Ahn 2020</p>
     </footer>
     <!-- Footer ends here -->
-    <!-- jQuery for hamburger menu -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script>
-    $(function() {
-        $('.hamburger').click(function() {
-            $('.menu').addClass('show');
-        });
-        $('.exit-responsive').click(function() {
-            $('.menu').removeClass('show');
-        });
-    });
-    </script>    
+    <script src="./script.js"></script>   
 </body>
 </html>
