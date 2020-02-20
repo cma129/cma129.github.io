@@ -250,12 +250,15 @@ footer p {
     }
 
     .footer-icons {
-        width: 100%;
         margin: 0 auto;
     }
 
     .footer-icons li {
         font-size: 25px;
+    }
+    
+    .footer-icons li:last-of-type {
+        margin-right: 0;
     }
 
     footer p {
