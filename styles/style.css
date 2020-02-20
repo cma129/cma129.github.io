@@ -114,7 +114,6 @@ header {
 }
 
 /* Home main styles */
-
 .home-main {
     display: flex;
     flex-direction: column;
@@ -136,126 +135,7 @@ h1 span {
     color: #f6f7f9;
 }
 
-/* Projects main styles */
-.projects-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Contact main styles */
-.main-icon-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: space-evenly;
-    margin: 0 auto 4%;
-    width: 80%;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 50px;
-}
-
-.main-icon-container div {
-    width: 50%;
-}
-
-.main-icon-container ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-icon-container h1 {
-    font-size: 25px;
-    font-weight: normal;
-}
-
-.contact-icons li {
-    margin: 0 40px 0;
-    font-size: 40px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-icons i:hover,
-.contact-icons i:focus {
-    font-size: 45px;
-}
-
-/* Form styles */
-.contact-form {
-    margin: 0 auto;
-    width: 80%;
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input,
-textarea {
-    background-color: #f6f7f9;
-    color: #624b5d;
-}
-
-input,
-textarea,
-button {
-    border-radius: 7px;
-}
-
-.name-email {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-input[type=text],
-input[type=email] {
-    padding: 20px;
-}
-
-input[type=text] {
-    margin-right: 5px;
-    width: calc(40% - 2.5px);
-}
-
-input[type=email] {
-    margin-left: 5px;
-    width: calc(60% - 2.5px);
-}
-
-textarea {
-    height: 200px;
-    width: 100%;
-    padding: 20px;
-    margin: 10px;
-}
-
-button[type=submit] {
-    width: 20%;
-    padding: 15px;
-    background-color: #f6f7f9;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-button[type=submit] {
-    transition: all 0.9s linear;
-}
-
-button[type=submit]:hover,
-button[type=submit]:focus {
-    color: #f6f7f9;
-    background-color: #624b5d;
-}
-
 /* Footer styles */
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -348,24 +228,9 @@ footer p {
         color: #2c2c2c;
         font-size: 85px;
     }
-
-    .main-icon-container h1 {
-        font-size: 22px;
-    }
-
-    .contact-icons li {
-        margin: 0 30px 0;
-        font-size: 33px;
-    }
-    
-    .contact-icons i:hover,
-    .contact-icons i:focus {
-        font-size: 35px;
-    }
 }
 
 /* Tablet to large mobile */
-
 @media(max-width: 740px) {
     h1,
     h2 {
@@ -375,22 +240,6 @@ footer p {
 
     h1 span {
         font-size: 80px;
-    }
-
-    .contact-icons li {
-        margin: 0 17px 0;
-        font-size: 30px;
-    }
-    
-    .contact-icons i:hover,
-    .contact-icons i:focus {
-        font-size: 35px;
-    }
-
-    input[type=text],
-    input[type=email],
-    textarea {
-        padding: 14px;
     }
 
     .footer-icons li {
@@ -467,45 +316,6 @@ footer p {
         margin-top: 30px;
     }
 
-    .contact-main {
-        width: 95%;
-    }
-
-    .main-icon-container {
-        width: 100%;
-        padding-bottom: 25px;
-    }
-
-    .contact-form {
-        width: 90%;
-    }
-
-    input[type=text],
-    input[type=email],
-    textarea {
-        padding: 12px;
-    }
-
-    input[type=text] {
-        margin-right: 3px;
-        width: calc(40% - 1.5px);
-    }
-    
-    input[type=email] {
-        margin-left: 3px;
-        width: calc(60% - 1.5px);
-    }
-
-    textarea {
-        margin: 6px;
-    }
-    
-    button[type=submit] {
-        width: 30%;
-        padding: 12px;
-        font-weight: bold;
-    }
-
     .footer-icons li {
         font-size: 25px;
     }
@@ -538,29 +348,9 @@ footer p {
     h2 {
         line-height: 35px;
     }
-
-    .main-icon-container h1 {
-        font-size: 20px;
-        margin-bottom: 0;
-    }
-
-    .contact-icons li {
-        margin: 0 10px 0;
-        font-size: 29px;
-    }
-    
-    .contact-icons i:hover,
-    .contact-icons i:focus {
-        font-size: 32px;
-    }
-
-    .contact-form {
-        width: 97%;
-    }
 }
 
 /* Small mobile */
-
 @media(max-width: 380px) {
     .menu ul a {
         font-size: 15px;
@@ -573,28 +363,5 @@ footer p {
 
     h1 span {
         font-size: 70px;
-    }
-
-    .main-icon-container h1 {
-        font-size: 19px;
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    
-    input[type=text] {
-        margin-right: 2px;
-        width: calc(40% - 1px);
-    }
-    
-    input[type=email] {
-        margin-left: 2px;
-        width: calc(60% - 1px);
-    }
-
-    textarea {
-        margin: 4px 0;
     }
 }
