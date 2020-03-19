@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: linear-gradient(to right, #f5ec87, #deba59);
+    background: linear-gradient(to right, #ebd988, #dfbd61);
     height: 100vh;
 }
 
@@ -64,14 +64,14 @@ header {
 .logo {
     position: absolute;
     left: 0;
-    top: 15px;
-    width: 50px;
-    transition: transform 0.3s ease-in-out;
+    top: 10px;
+    width: 30px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .logo:hover,
 .logo:focus {
-    transform: rotate(7deg);
+    transform: rotateY(180deg);
 }
 
 .menu ul {
