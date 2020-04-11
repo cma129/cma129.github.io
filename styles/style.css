@@ -180,7 +180,6 @@ footer p {
 }
 
 /* Small desktop */
-
 @media(max-width: 990px) {
     .wrapper {
         width: 90%;
